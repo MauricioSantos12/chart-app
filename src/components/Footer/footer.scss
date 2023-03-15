@@ -1,0 +1,56 @@
+.container--footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+  }
+  
+  .container--footer > h5{
+    max-width: 70vw;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .container--icon {
+    color: var(--color);
+    border: 1px solid var(--color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 18px;
+  }
+  
+  .container--icon:hover {
+    background-color: var(--color);
+    .icon {
+      color: white;
+    }
+  }
+  
+  footer {
+    color: white;
+    padding: 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  p > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  .container--copy {
+    display: flex;
+    padding: 10px 0px;
+  }

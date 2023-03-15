@@ -1,0 +1,96 @@
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  nav h1 {
+    color: var(--color-primario);
+  }
+  
+  nav a {
+    color: var(--color-primario);
+    transition: var(--transicion);
+  }
+  nav a:hover {
+    color: var(--color);
+    padding-bottom: 6px;
+    transition: var(--transition);
+    border-bottom: 2px solid var(--color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--negrita);
+  }
+  .menu-hamburguesa {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  .show {
+    transform: translateX(0);
+  }
+
+  .contactButton {
+    color: var(--color-form);
+    border: 1px solid var(--color-form);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .contactButton:hover {
+    color: white;
+    padding: 10.2px;
+    border-bottom: 2px solid var(--color-form);
+    background-color: var(--color-form);
+  }
+
+  .iconPage {
+    width: 8%;
+    min-width: 90px;
+  }
+
+  @media screen and (max-width: 720px) {
+    nav {
+      padding: 1.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: var(--transition);
+    }
+  
+     nav ul li {
+      margin: 8px;
+    }
+    .menu-hamburguesa {
+      display: block;
+    }
+  }
